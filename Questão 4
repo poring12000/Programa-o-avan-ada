@@ -11,3 +11,5 @@ j = 27
 l = 31 
 m = 45
 n = 27
+
+Os valores obtidos foram os esperados.
