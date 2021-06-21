@@ -1,0 +1,4 @@
+p = mat + 1; Certo
+p = mat++; Errado
+p = ++mat; Errado
+x = (*mat)++; Errado
