@@ -1,0 +1,12 @@
+A resposta mais simples para a pergunta "o que é um ponteiro" é: um ponteiro é uma variável que contém um endereço de memória.
+
+Código do pequeno programa:
+#include <stdio.h>
+
+int main(){
+  int *x, y;
+   x=&y;
+  *x=5;
+   printf("%d",*x);
+   return 0;
+}
