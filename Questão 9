@@ -1,0 +1,4 @@
+se X for do tipo char x+1 vai ficar armazenado em 4093, x+2 vai ficar armazenado em 4094 e x+3 vai ficar armazenado em 4095.
+se X for do tipo int x+1 vai ficar armazenado em 4094, x+2 vai ficar armazenado em 4096 e x+3 vai ficar armazenado em 4098.
+se X for do tipo float x+1 vai ficar armazenado em 4096, x+2 vai ficar armazenado em 5000 e x+3 vai ficar armazenado em 5004.
+se X for do tipo double x+1 vai ficar armazenado em 5000, x+2 vai ficar armazenado em 5008 e x+3 vai ficar armazenado em 5016.
