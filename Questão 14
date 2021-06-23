@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+int compare(const void *a, const void *b){ //criando a função compare para retornar o valor para a função qsort
+    return (*(int*)a - *(int*)b); // o retorno para a função
+}
+
+int main(){
+  int *x, n, aux; //declarando variáveis
+  scanf("%d",&n);  //alocando o valor recebido em n
+  x=malloc(n*sizeof(int));  //alocando memória para o vetor
+  for(int a=0;a<n;a++){
+        x[a]=rand()%100;  //colocando valores aleatórios em x
+    }
+        qsort(x,n,sizeof(float),compare); //utilizando a função qsort
+    for(int aa=0;aa<n;aa++){
+        printf("%d\n",x[aa]);  //espondo os valores de x já em ordem crescente
+    }
+    free(x);  //liberando memória
+   return 0;
+}
