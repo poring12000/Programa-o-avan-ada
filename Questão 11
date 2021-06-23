@@ -1,0 +1,8 @@
+aloha[2] = value; Certo
+scanf("%f", &aloha); Certo
+aloha = value"; Errado
+printf("%f", aloha); Certo
+coisas[4][4] = aloha[3]; Certo
+coisas[5] = aloha; Errado
+pf = value; Certo
+pf = aloha; Certo
