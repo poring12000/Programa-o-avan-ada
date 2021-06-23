@@ -1,0 +1,1 @@
+Na comparação o char realmente ocupou apenas 1 byte, o int ocupou 4 bytes, o float ocupou também 4 bytes e o double ocupou 8 bytes.
