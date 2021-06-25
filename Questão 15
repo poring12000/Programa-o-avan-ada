@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+int compare(const void *a, const void *b){
+    return (*(int*)a - *(int*)b);
+}
+
+int main(){
+  int *x, n, aux;
+  scanf("%d",&n);
+  x=malloc(n*sizeof(int));
+  for(int a=0;a<n;a++){
+        x[a]=rand()%100;
+    }
+        qsort(x,n,sizeof(float),compare);
+    for(int aa=0;aa<n;aa++){
+        printf("%d\n",x[aa]);
+    }
+    free(x);
+   return 0;
+}
