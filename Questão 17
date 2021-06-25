@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+int main(){
+    int n, *a, *b, *resul;
+    char *x[10], *y[10], *z[10];
+    scanf("%s \n %s \n %s \n %d", &x, &y, &z, &n);
+       a=malloc(n*sizeof(int));
+       b=malloc(n*sizeof(int));
+       resul=malloc(n*sizeof(int));
+      for(int u = 0; u <n; u ++) {
+         a[u] = rand()%10;
+          b[u] = rand()%10;
+           resul[u] = rand ()% 10;
+    }
+    for(int aa=0; aa<n; aa++){
+        resul[aa]=a[aa]+b[aa];
+    }
+    printf("\n o nome do primeiro vetor %s e ele ", x);
+    for(int aa=0; aa<n; aa++){
+        printf (" %d ", a[aa]);
+    }
+    printf("\n o nome do segundo vetor %s e ele ", y);
+    for(int aa=0; aa<n; aa++){
+        printf (" %d ", b[aa]);
+    }
+    printf("\n o nome do terceiro vetor %s e ele ", z);
+    for(int aa=0; aa<n; aa++){
+        printf (" %d ", resul[aa]);
+    }
+}
