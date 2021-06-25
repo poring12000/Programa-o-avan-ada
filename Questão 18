@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+int mult(int **a,int **b,int **c,int la,int ca,int lb){
+    for(int x=0;x<la;x++){
+        for(int y=0;y<1;y++){
+                for(int i=0; i<ca; i++){
+            c[x][y]=c[x][y]+a[x][i]*b[i][y];
+            }
+        }
+    }
+    for(int x=0;x<la;x++){
+        printf(" %d ",a[x][0]);
+
+    }
+}
+
+int main(){
+    int i, **a, **b, **c, la, ca, lb;
+    scanf("%d \n %d \n %d", &la, &ca, &lb);
+    a=malloc(la*sizeof(int));
+    a[0]=malloc(la*ca*sizeof(int));
+    for(i=0;i<la;i++){
+        a[i]=a[i-1]+ca;
+    }
+    b=malloc(lb*sizeof(int));
+    b[0]=malloc(lb*sizeof(int));
+    for(i=0;i<1;i++){
+        b[i]=b[i-1]+1;
+    }
+    c=malloc(sizeof(int));
+    c[0]=malloc(ca*sizeof(int));
+    for(i=0;i<1;i++){
+        c[i]=c[i-1]+ca;
+    }
+    mult(&a,&b,&c,&la,&ca,&lb);
+}
