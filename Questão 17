@@ -29,4 +29,6 @@ int main(){
     for(int aa=0; aa<n; aa++){
         printf (" %d ", resul[aa]);
     }
+    free(b);
+    free(a);
 }
