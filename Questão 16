@@ -1,0 +1,4 @@
+O tempo de execução do código da questão 15 foi de 2.606s e do código da questão 14 foi de 0.031s. 
+Percebo que essa grande diferença de tempo é devido à a função scanf que implementa o tempo que levo para colocar o 
+tamanho de vetor e também por ser um código que usa a alocação de memória, deixando assim o 
+código feito pelo professor em aula muito mais rápido e simples.
